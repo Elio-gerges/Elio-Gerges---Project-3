@@ -155,6 +155,9 @@ p {
 
 .new-album {
     padding: 20px 0 0 0;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 }
 
 .album-song-list {
@@ -206,6 +209,24 @@ p {
 [class*="album-holder"]:hover [id*="album-text-"] {
     transform: scale(1.1);
     z-index: 50;
+}
+
+@media only screen and (max-width: 992px) {
+    .image-details,
+    .album-image,
+    .album-vinyl {
+        width: 250px;
+        height: 250px;
+    }
+
+    .band-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    .album-vinyl {left: 125px;}
+
+    .menu-btn {left: 87.5%;}
 }
 
 /* End mains */
